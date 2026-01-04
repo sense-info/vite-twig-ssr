@@ -5,6 +5,18 @@
     "subtitle": "把 README 內容直接渲染在範例頁面",
     "tagline": "Vite dev-server plugin that renders Twig templates with Twig.js, auto-maps JSON mock data, and keeps PHP-compatible views in sync with HMR."
   },
+  "hero": {
+    "kicker": "Open Source",
+    "heading": "Build Twig views with Vite speed",
+    "copy": "Hot reload Twig templates and JSON mock data while staying compatible with PHP/Twig in production.",
+    "action": "View on GitHub",
+    "action_href": "https://github.com/sense-info/vite-twig-ssr",
+    "action_target": "_blank",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Developers working with code"
+    }
+  },
   "overview": [
     "PHP 後端相容：開發用 Vite + Twig.js，佈署仍交給 PHP/Twig，模板不需分叉。",
     "自動 Mock 綁定：請求 src/views/foo.twig 時，會找 mock/foo.json 並注入為 context。",
@@ -63,4 +75,24 @@
   "scripts": "npm run lint   # ESLint (Node + browser overrides)\nnpm test       # Mocha 渲染器單元測試",
   "test_focus": "測試重點：模板/JSON/global data 合併、自訂 filter/function 註冊、JSON 解析與缺漏錯誤訊息。",
   "license": "MIT"
+  ,
+  "navbar": {
+    "brand": {
+      "label": "vite-twig-ssr",
+      "href": "/views/index.twig"
+    },
+    "links": [
+      { "label": "Home", "href": "/views/index.twig" },
+      { "label": "About", "href": "/views/about.twig" }
+    ],
+    "buttons": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/sense-info/vite-twig-ssr",
+        "kind": "is-info",
+        "target": "_blank",
+        "rel": "noreferrer"
+      }
+    ]
+  }
 }

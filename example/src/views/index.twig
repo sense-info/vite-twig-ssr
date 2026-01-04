@@ -1,6 +1,12 @@
 {% extends "layout.twig" %}
 
 {% block page %}
+  {% if hero %}
+    <section class="box">
+      {% include "components/hero.twig" with { hero: hero } only %}
+    </section>
+  {% endif %}
+
   <section class="box">
     <h2>{{ current.title|e }}</h2>
     <p>{{ current.subtitle|e }}</p>
