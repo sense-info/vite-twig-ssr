@@ -1,0 +1,26 @@
+{% extends "layout.twig" %}
+
+{% block page %}
+  <section>
+    <h2>{{ current.title }}</h2>
+    <p>{{ current.subtitle }}</p>
+  </section>
+
+  <section>
+    <h3>Team</h3>
+    <ul>
+      {% for member in team %}
+        <li>{{ member.name }} · {{ member.role }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h4>Breadcrumbs</h4>
+    <ul>
+      {% for crumb in page.breadcrumb %}
+        <li>{{ crumb.label }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

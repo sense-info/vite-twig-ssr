@@ -1,0 +1,18 @@
+{
+  "current": {
+    "title": "About Twig",
+    "content": "<p>Rendered via Twig.js</p>"
+  },
+  "page": {
+    "breadcrumb": [
+      { "label": "Home" },
+      { "label": "About" }
+    ]
+  },
+  "opts": {
+    "default": {
+      "contact_mail": "support@example.com"
+    }
+  },
+  "site_name": "Vite Twig"
+}

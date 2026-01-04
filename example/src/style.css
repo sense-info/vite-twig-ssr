@@ -1,0 +1,57 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  background: #f8f9fb;
+  --card-bg: #ffffff;
+  --card-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  --code-bg: #1f2430;
+  --code-text: #f7f7f7;
+  --muted: #6b7280;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f9fb;
+}
+
+.navbar {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.box {
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.content pre code,
+.code code {
+  display: block;
+  background: var(--code-bg);
+  color: var(--code-text);
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.table {
+  background: transparent;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.navbar-item svg {
+  height: 1.5rem;
+}
+
+.is-size-7 {
+  color: var(--muted);
+}

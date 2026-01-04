@@ -1,0 +1,49 @@
+{
+  "name": "vite-twig-ssr",
+  "description": "Twig.js bridge for Vite with mock data mapping and blazing-fast HMR",
+  "version": "0.3.0",
+  "homepage": "https://github.com/trevorpao/vite-twig-ssr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trevorpao/vite-twig-ssr.git"
+  },
+  "author": "Trevor Pao <trevor@sense-info.co> (http://www.sense-info.co)",
+  "type": "commonjs",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "twig": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "mocha": "^10.0.0",
+    "should": "^13.2.3",
+    "vite": "^7.3.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha -R spec",
+    "example:dev": "vite --config example/vite.config.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "twig",
+    "twig.js",
+    "vite",
+    "plugin",
+    "hmr"
+  ],
+  "license": "MIT"
+}

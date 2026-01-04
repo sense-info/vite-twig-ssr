@@ -1,0 +1,23 @@
+{
+  "main_domain": "f3cms.com",
+  "current": {
+    "title": "About this Vite+Twig sandbox",
+    "subtitle": "This page demonstrates twig mock mapping for about.twig"
+  },
+  "page": {
+    "breadcrumb": [
+      { "label": "Home" },
+      { "label": "About" }
+    ]
+  },
+  "team": [
+    { "name": "Jess", "role": "Design" },
+    { "name": "Kai", "role": "Frontend" },
+    { "name": "Mina", "role": "PM" }
+  ],
+  "opts": {
+    "default": {
+      "contact_mail": "about@example.com"
+    }
+  }
+}

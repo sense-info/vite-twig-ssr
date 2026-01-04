@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ current.title|default('Vite Twig') }}</title>
+</head>
+<body>
+  <main>
+    {% block page %}{% endblock %}
+  </main>
+  <footer>
+    <span class="contact">{{ opts.default.contact_mail|default('n/a') }}</span>
+    <span class="version">version: {{ feVersion }}</span>
+  </footer>
+</body>
+</html>

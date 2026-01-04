@@ -1,0 +1,15 @@
+{% extends "layout.twig" %}
+
+{% block page %}
+<section data-template="{{ _file.relative }}">
+  <h1>{{ current.title }}</h1>
+  <div class="content">{{ current.content|raw }}</div>
+  <ul class="breadcrumbs">
+    {% for crumb in page.breadcrumb %}
+      <li>{{ loop.index }}. {{ crumb.label }}</li>
+    {% endfor %}
+  </ul>
+  <p class="site">{{ site_name|uppercase }}</p>
+  <a class="asset" href="{{ asset('logo.svg') }}">logo</a>
+</section>
+{% endblock %}
